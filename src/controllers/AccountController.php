@@ -51,6 +51,7 @@ class AccountController extends Controller
         $cookies = \Yii::$app->request->cookies;
         if($cookies->getValue('order')){
            $order = Json::decode($cookies->getValue('order'));
+           $order['user_id'] = \Yii::$app->user->id;
            CatalogController::saveOrder($order);
             \Yii::$app->response->cookies->remove('order');
         }
