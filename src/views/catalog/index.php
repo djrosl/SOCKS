@@ -39,7 +39,6 @@ NgAsset::register($this);
 		pagination: true,
 		padding: 25,
 		navText: '',
-		loop: true,
 		items: 1}">
             <div class="item" ng-repeat="product in products" owl-carousel-item>
                 <div class="img_wrap"><img ng-src="{{product.image}}"></div>

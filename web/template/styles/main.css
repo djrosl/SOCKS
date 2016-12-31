@@ -783,7 +783,9 @@ nav.fixed {
 }
 
 .kinds .owl-controls .owl-nav .owl-prev,
-.kinds .owl-controls .owl-nav .owl-next {
+.kinds .owl-controls .owl-nav .owl-next,
+.catalog_slider .owl-controls .owl-nav .owl-prev,
+.catalog_slider  .owl-controls .owl-nav .owl-next{
   position: absolute;
   top: 75px;
   left: 0;
@@ -796,7 +798,8 @@ nav.fixed {
   transform: rotate(135deg);
 }
 
-.kinds .owl-controls .owl-nav .owl-next {
+.kinds .owl-controls .owl-nav .owl-next,
+.catalog_slider .owl-controls .owl-nav .owl-next{
   left: auto;
   right: 0;
   -webkit-transform: rotate(-45deg);

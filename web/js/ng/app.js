@@ -44,7 +44,7 @@ app.controller('CatalogController', ['$scope', '$http', function($scope, $http){
       }).then(function(response){
           console.log(response);
 
-          if(response == 'openModal'){
+          if(response.data == 'openModal'){
               $('.popup.reg').fadeIn(100);
           } else {
               window.location.href = '/account';
