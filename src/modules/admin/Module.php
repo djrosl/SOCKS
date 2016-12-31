@@ -24,6 +24,10 @@ class Module extends \nullref\admin\Module implements IAdminModule
                     'url' => ['/admin/product'],
                 ],
                 [
+                    'label' => 'Типы подписок',
+                    'url' => ['/admin/subscription'],
+                ],
+                [
                     'label' => 'Заказы',
                     'url' => ['/admin/user-subcription'],
                 ],
