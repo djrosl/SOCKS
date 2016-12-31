@@ -1,0 +1,382 @@
+<!doctype html>
+<html lang="ru">
+  <head>
+    <meta charset="utf-8">
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>www</title>
+
+    <link rel="icon" href="favicon.ico" type="favicon.ico">
+    <!-- <link rel="apple-touch-icon" href="apple-touch-icon.png"> -->
+    <!-- Place favicon.ico in the root directory -->
+
+    
+
+    <link rel="stylesheet" href="styles/main.css">
+    
+  </head>
+  <body>
+    <!--[if lt IE 10]>
+      <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
+    <![endif]-->
+    
+    <header>
+
+      <div class="wrapper top">
+        <a href="#" class="logo">
+          <img src="images/icons/logo.png">
+          <h1>Носки по подписке Владивосток</h1>
+        </a>
+
+        <div class="contacts">
+          <a href="tel:89024845226" class="phone">
+            <img src="images/icons/phone.png" alt="phone-icon">
+            <span>8 (902) 484 52 26</span>
+          </a>
+          <a href="mailto:grusomme.h@mail.ru"  class="mail">
+            <img src="images/icons/mail.png" alt="mail-icon">
+            <span>grusomme.h@mail.ru</span>
+          </a>
+        </div>
+
+
+        <a href="#" class="login">
+          <img src="images/icons/login.png">
+          <span>Личный кабинет</span>
+        </a>
+      </div>
+      
+
+      <nav class="wrapper">
+        <div class="burger">
+          <span></span>
+          <span></span>
+          <span></span>
+        </div>
+        <ul>
+          <li><a href="#">Подписаться</a></li>
+          <li><a href="#">Каталог товаров</a></li>
+          <li><a href="#">Как это работает </a></li>
+          <li><a href="#">Доставка и оплата </a></li>
+          <li><a href="#">Вопрос/Ответ</a></li>
+          <li class="gift"><a href="#">
+            <img src="images/icons/gift.png" alt="">
+            <span>Подарочная подписка</span>
+          </a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <div class="catalog wrapper">
+      <h2 class="title_top">Каталог товаров</h2>
+      <div class="tabs">
+        <a href="#" class="tab_socks active" data-tab-handler="socks">НОСКИ</a>
+        <a href="#" class="tab_personal_data" data-tab-handler="underwear">Нижнее белье</a>
+      </div>
+
+      <div class="socks_block active" data-tab="socks">
+        <div class="select_subs">
+          <div class="made_in">
+            <img src="images/bg/made_in.jpg">
+            <span>Выберите подписку:</span>
+          </div>
+          <div class="select_wrap">
+            <label>
+              <input type="radio" name="select_subs">
+              <div class="wrap">
+                <div class="title">ТЕСТОВАЯ ПОДПИСКА</div>
+                <div class="month">1 МЕСЯЦ</div>
+                <div class="price">590 Р.</div>
+              </div>
+            </label>
+            <label>
+              <input type="radio" name="select_subs">
+              <div class="wrap">
+                <div class="title">ТЕСТОВАЯ ПОДПИСКА</div>
+                <div class="month">1 МЕСЯЦ</div>
+                <div class="price">590 Р.</div>
+              </div>
+            </label>
+            <label class="accent">
+              <input type="radio" name="select_subs">
+              <div class="wrap">
+                <div class="title">ТЕСТОВАЯ ПОДПИСКА</div>
+                <div class="month">1 МЕСЯЦ</div>
+                <div class="price">590 Р.</div>
+              </div>
+            </label>
+          </div>
+        </div>
+
+        <div class="catalog_slider">
+          <div class="item">
+            <div class="img_wrap"><img src="images/bg/socks.jpg"></div>
+            <div class="wrap">
+              <div class="filter">
+                <div class="top">
+                  <label class="female">
+                    <input type="radio" name="gender" value="Женские носочки">
+                    <span>Женские</span>
+                  </label>
+                  <label class="male">
+                    <input type="radio" name="gender" value="Мужские носки">
+                    <span>Мужские</span>
+                  </label>
+                  <ul class="color_select">
+                    <li class="current">
+                      <img src="images/icons/blue.jpg" alt=""> Цвет: <span>голубой</span>
+                    </li>
+                    <ul class="drop">
+                      <li><img src="images/icons/blue.jpg" alt=""><span>белый</span></li>
+                      <li><img src="images/icons/blue.jpg" alt=""><span>черный</span></li>
+                      <li><img src="images/icons/blue.jpg" alt=""><span>красный</span></li>
+                    </ul>
+                  </ul>
+                </div>
+
+                <div class="center">
+                  <div class="type">
+                    <label>
+                      <input type="radio" name='type' value="Теп.">
+                      <span>Теплые</span>
+                    </label>
+                    <label>
+                      <input type="radio" name='type' value="Классические">
+                      <span>Классические</span>
+                    </label>
+                  </div>
+                  <div class="size">
+                    <div class="span title">Размер:</div>
+                    <label><input type="radio" name="size" value="р.39"><span>39</span></label>
+                    <label><input type="radio" name="size" value="р.40"><span>40</span></label>
+                    <label><input type="radio" name="size" value="р.41"><span>41</span></label>
+                    <label><input type="radio" name="size" value="р.42"><span>42</span></label>
+                    <label><input type="radio" name="size" value="р.43"><span>43</span></label>
+                    <label><input type="radio" name="size" value="р.44"><span>44</span></label>
+                    <label><input type="radio" name="size" value="р.45"><span>45</span></label>
+                  </div>
+                </div>
+
+                <div class="consist">
+                  <div class="title">
+                    <span>Состав: </span>80 % хлопок 15 % полиамид 5 % эластан
+                  </div>
+                  <p>
+                    Носки изготавливают на итальянских машинах BUSI GIOVANNI. В состав входит хлопок высшего качества с добавлением полиамида (для придания прочности) и эластана (для сохранения формы и комфортного облегания ноги). Носки проходят обработку на французском оборудовании ERMEST (пар, сушка).
+                  </p>
+                </div>
+                <a href="#" class="button">ВЫБРАТЬ</a>
+              </div>
+            </div>
+          </div>
+          <div class="item">
+            <div class="img_wrap"><img src="images/bg/socks.jpg"></div>
+            <div class="wrap">
+              <div class="filter">
+                <div class="top">
+                  <label>
+                    <input type="radio" name="gender" value="Женские носочки">
+                    <span>Женские</span>
+                  </label>
+                  <label>
+                    <input type="radio" name="gender" value="Мужские носки">
+                    <span>Мужские</span>
+                  </label>
+                  <ul class="color_select">
+                    <li class="current">
+                      <img src="images/icons/blue.jpg" alt=""> Цвет: <span>голубой</span>
+                    </li>
+                    <ul class="drop">
+                      <li><img src="images/icons/blue.jpg" alt=""><span>белый</span></li>
+                      <li><img src="images/icons/blue.jpg" alt=""><span>черный</span></li>
+                      <li><img src="images/icons/blue.jpg" alt=""><span>красный</span></li>
+                    </ul>
+                  </ul>
+                </div>
+
+                <div class="center">
+                  <div class="type">
+                    <label>
+                      <input type="radio" name='type' value="Теп.">
+                      <span>Теплые</span>
+                    </label>
+                    <label>
+                      <input type="radio" name='type' value="Классические">
+                      <span>Классические</span>
+                    </label>
+                  </div>
+                  <div class="size">
+                    <div class="span title">Размер:</div>
+                    <label><input type="radio" name="size" value="р.39"><span>39</span></label>
+                    <label><input type="radio" name="size" value="р.40"><span>40</span></label>
+                    <label><input type="radio" name="size" value="р.41"><span>41</span></label>
+                    <label><input type="radio" name="size" value="р.42"><span>42</span></label>
+                    <label><input type="radio" name="size" value="р.43"><span>43</span></label>
+                    <label><input type="radio" name="size" value="р.44"><span>44</span></label>
+                    <label><input type="radio" name="size" value="р.45"><span>45</span></label>
+                  </div>
+                </div>
+
+                <div class="consist">
+                  <div class="title">
+                    <span>Состав: </span>80 % хлопок 15 % полиамид 5 % эластан
+                  </div>
+                  <p>
+                    Носки изготавливают на итальянских машинах BUSI GIOVANNI. В состав входит хлопок высшего качества с добавлением полиамида (для придания прочности) и эластана (для сохранения формы и комфортного облегания ноги). Носки проходят обработку на французском оборудовании ERMEST (пар, сушка).
+                  </p>
+                </div>
+                <a href="#" class="button">ВЫБРАТЬ</a>
+              </div>
+            </div>
+          </div>
+          <div class="item">
+            <div class="img_wrap"><img src="images/bg/socks.jpg"></div>
+            <div class="wrap">
+              <div class="filter">
+                <div class="top">
+                  <label>
+                    <input type="radio" name="gender" value="Женские носочки">
+                    <span>Женские</span>
+                  </label>
+                  <label>
+                    <input type="radio" name="gender" value="Мужские носки">
+                    <span>Мужские</span>
+                  </label>
+                  <ul class="color_select">
+                    <li class="current">
+                      <img src="images/icons/blue.jpg" alt=""> Цвет: <span>голубой</span>
+                    </li>
+                    <ul class="drop">
+                      <li><img src="images/icons/blue.jpg" alt=""><span>белый</span></li>
+                      <li><img src="images/icons/blue.jpg" alt=""><span>черный</span></li>
+                      <li><img src="images/icons/blue.jpg" alt=""><span>красный</span></li>
+                    </ul>
+                  </ul>
+                </div>
+
+                <div class="center">
+                  <div class="type">
+                    <label>
+                      <input type="radio" name='type' value="Теп.">
+                      <span>Теплые</span>
+                    </label>
+                    <label>
+                      <input type="radio" name='type' value="Классические">
+                      <span>Классические</span>
+                    </label>
+                  </div>
+                  <div class="size">
+                    <div class="span title">Размер:</div>
+                    <label><input type="radio" name="size" value="р.39"><span>39</span></label>
+                    <label><input type="radio" name="size" value="р.40"><span>40</span></label>
+                    <label><input type="radio" name="size" value="р.41"><span>41</span></label>
+                    <label><input type="radio" name="size" value="р.42"><span>42</span></label>
+                    <label><input type="radio" name="size" value="р.43"><span>43</span></label>
+                    <label><input type="radio" name="size" value="р.44"><span>44</span></label>
+                    <label><input type="radio" name="size" value="р.45"><span>45</span></label>
+                  </div>
+                </div>
+
+                <div class="consist">
+                  <div class="title">
+                    <span>Состав: </span>80 % хлопок 15 % полиамид 5 % эластан
+                  </div>
+                  <p>
+                    Носки изготавливают на итальянских машинах BUSI GIOVANNI. В состав входит хлопок высшего качества с добавлением полиамида (для придания прочности) и эластана (для сохранения формы и комфортного облегания ноги). Носки проходят обработку на французском оборудовании ERMEST (пар, сушка).
+                  </p>
+                </div>
+                <a href="#" class="button">ВЫБРАТЬ</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="underwear_block" data-tab="underwear">
+        
+      </div>
+
+    </div>
+
+    <div class="selected">
+      <div class="wrapper">
+        <div class="title_top">Ваш выбор</div>
+        <div class="wrap">
+          <div class="item active confirm">
+            <a href="" class="delete"></a>
+            <div class="top">
+              <div class="gender">Женские носочки</div>
+              <div class="type">(теп.классические) р.36</div>
+            </div>
+            <div class="img_wrap">
+              <img src="images/bg/product.jpg" class="bg">
+              <span class="ok"></span>
+            </div>
+            <div class="color">Цвет: <span>Голубой</span></div>
+          </div>
+          <div class="item active isactive">
+            <a href="" class="delete"></a>
+            <div class="top">
+              <div class="gender">Женские носочки</div>
+              <div class="type">(теп.классические) р.36</div>
+            </div>
+            <div class="img_wrap">
+              <img src="images/bg/product.jpg" class="bg">
+              <span class="ok"></span>
+            </div>
+            <div class="color">Цвет: <span>Голубой</span></div>
+          </div>
+          <div class="item">
+            <a href="" class="delete"></a>
+            <div class="top">
+              <div class="gender"></div>
+              <div class="type"></div>
+            </div>
+            <div class="img_wrap">
+              <img src="" class="bg">
+              <span class="ok"></span>
+            </div>
+            <div class="color">Цвет: <span></span></div>
+          </div>
+        </div>
+        <div class="coast">
+          <div class="top">Стоимость подписки  <span class="val">590</span><span class="sub">руб.</span></div>
+          <a href="#" class="button">ОФОРМИТЬ ЗАКАЗ</a>
+          <div class="certificate">Оплата по сертификату</div>
+        </div>
+      </div>
+    </div>
+
+    <footer>
+      <div class="wrapper">
+        <ul class="nav">
+          <li><a href="#">Доставка и оплата</a></li>
+          <li><a href="#">Возврат/обмен </a></li>
+          <li><a href="#">Остановить/отменить подписку</a></li>
+        </ul>
+        <div class="social">
+          <a href="#"><img src="images/icons/social.jpg"></a>
+        </div>
+        <div class="contacts">
+          <a href="tel:89024845226" class="phone">8 (902) 484 52 26</a>
+          <a href="mailto:grusomme.h@mail.ru" class="mail">grusomme.h@mail.ru</a>
+        </div>
+        <div class="copyright">© 2016 Соксус</div>
+      </div>
+    </footer>
+
+    <!-- Google Analytics: change UA-XXXXX-X to be your site's ID. -->
+    <script>
+      (function(b,o,i,l,e,r){b.GoogleAnalyticsObject=l;b[l]||(b[l]=
+      function(){(b[l].q=b[l].q||[]).push(arguments)});b[l].l=+new Date;
+      e=o.createElement(i);r=o.getElementsByTagName(i)[0];
+      e.src='https://www.google-analytics.com/analytics.js';
+      r.parentNode.insertBefore(e,r)}(window,document,'script','ga'));
+      ga('create','UA-XXXXX-X');ga('send','pageview');
+    </script>
+
+    <script src="scripts/vendor.js"></script>
+    
+    <script src="scripts/main.js"></script>
+  </body>
+</html>

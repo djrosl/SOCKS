@@ -1,0 +1,65 @@
+.text-justify {
+    text-align: justify;
+}
+.text-justify:after {
+    content: '';
+    display: inline-block;
+    width: 100%;
+}
+.text-justify > a {
+    display: inline-block;
+}
+
+img {
+    max-width: 100%;
+}
+
+.bgcol {
+    width: 18px;
+    height: 18px;
+    display: inline-block;
+    margin-right: 3px;
+}
+.catalog_slider .top .color_select .drop li span {
+    font-weight: 300;
+}
+
+.catalog_slider .top .color_select .drop li {
+    padding: 5px 5px 5px 6px;
+}
+
+.catalog_slider .top .color_select .drop li span.bgcol {
+    margin-right: 10px;
+}
+
+.catalog_slider .top .color_select {
+    padding-left: 7px;
+    min-width: 168px;
+    width: auto;
+}
+.catalog_slider .top label input[type='radio']:checked + span {
+    /*border-width: 2px;*/
+}
+.catalog_slider .top .color_select .drop {
+    display: block;
+}
+
+.button-disabled,
+.button-disabled:hover {
+    background: #cecece;
+}
+
+.select_wrap label .wrap div {
+    text-transform: uppercase;
+}
+.subs_block .contact_form_order .form-group {
+    display: inline-block;
+}
+.subs_block .head li {
+    vertical-align: top;
+}
+
+.personal_block .button {
+    font-size: 14px;
+    padding: 7px 20px 4px;
+}
