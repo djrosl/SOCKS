@@ -3,7 +3,7 @@ var app = angular.module('Socks',[]);
 app.controller('CatalogController', ['$scope', '$http', function($scope, $http){
 
     $scope.products = [];
-    $http.get('http://localhost:8080/product?expand=image,colors,sizes').then(function(response){
+    $http.get('/product?expand=image,colors,sizes').then(function(response){
         $scope.products = response.data;
     });
 
