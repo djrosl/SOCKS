@@ -37,7 +37,7 @@ $this->params['breadcrumbs'][] = $this->title;
               'attribute'=>'user_id',
                 'format'=>'html',
                 'value'=>function($model){
-                if($model->user){
+                if($model->user->profile){
                     return Html::tag('span', $model->user->profile->name).Html::tag('div', ' ['.$model->user->email.']');
                 }
                 }
