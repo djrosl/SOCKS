@@ -44,7 +44,7 @@ class RegistrationController extends \dektrium\user\controllers\RegistrationCont
             ]);*/
         }
 
-        return false;/*
+        return $model->getErrors();/*
 
         return $this->render('register', [
             'model'  => $model,
