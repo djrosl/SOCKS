@@ -20,6 +20,14 @@ class Module extends \nullref\admin\Module implements IAdminModule
                     'url' => ['/admin/main'],
                 ],
                 [
+                    'label' => 'Слайды',
+                    'url' => ['/admin/slide'],
+                ],
+                [
+                    'label' => 'Доставка и оплата',
+                    'url' => ['/admin/page/view?id=1'],
+                ],
+                [
                     'label' => 'Носки',
                     'url' => ['/admin/product'],
                 ],

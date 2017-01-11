@@ -58,6 +58,7 @@ $this->params['breadcrumbs'][] = $this->title; ?>
                     $model->subscription->title,
                     $model->subscription->length,
                     $model->subscription->price.' руб',
+                    $model->address
                 ])
             ],
             [

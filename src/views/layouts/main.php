@@ -50,13 +50,13 @@ AppAsset::register($this);
         <nav class="wrapper">
             <div class="burger"><span></span> <span></span> <span></span></div>
             <ul>
-                <li><a href="#">Подписаться</a></li>
+                <li><a href="<?=Url::to(['/catalog'])?>">Подписаться</a></li>
                 <li><a href="<?=Url::to(['/catalog'])?>">Каталог товаров</a></li>
-                <li><a href="#">Как это работает</a></li>
-                <li><a href="#">Доставка и оплата</a></li>
-                <li><a href="#">Вопрос/Ответ</a></li>
+                <li><a href="<?=Url::to(['site/about'])?>">Как это работает</a></li>
+                <li><a href="<?=Url::to(['site/delivery'])?>">Доставка и оплата</a></li>
+                <li><a href="<?=Url::to(['site/faq'])?>">Вопрос/Ответ</a></li>
                 <li class="gift">
-                    <a href="#"><img src="/template/images/icons/gift.png" alt=""> <span>Подарочная подписка</span></a>
+                    <a href="<?=Url::to(['site/gift'])?>"><img src="/template/images/icons/gift.png" alt=""> <span>Подарочная подписка</span></a>
                 </li>
             </ul>
         </nav>

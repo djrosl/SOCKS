@@ -65,6 +65,20 @@ class Product extends \yii\db\ActiveRecord
         ];
     }
 
+    public function getSizes(){
+        $arr = Json::decode($this->sizes);
+        $out = $arr[0].'-'.$arr[count($arr) - 1];
+        return $out.' р.';
+    }
+
+    public function getColors(){
+
+        return implode(', ', array_map(function($color){
+            return $color['name'];
+        }, Json::decode($this->colors)));
+
+    }
+
 
     /**
      * @inheritdoc

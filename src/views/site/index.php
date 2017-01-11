@@ -5,66 +5,30 @@ use yii\helpers\Url;
 $this->title = Yii::$app->name;
 ?>
 <div class="slider wrapper">
-    <div class="item"><img src="/template/images/bg/main_slide.jpg">
+    <?php foreach($slides as $slide): ?>
+    <div class="item"><img src="<?=$slide->getImage()->getUrl('1200x383')?>">
         <div class="desc">
-            <div class="title">Заголовок слайдера</div>
-            <p>Lorem Ipsum - это текст-"рыба", часто используемый в печати и вэб-дизайне. Lorem Ipsum является стандартной "рыбой" для текстов на латинице с начала XVI века.</p><a href="#" class="button">УЗНАТЬ ПОДРОБНЕЕ</a></div>
+            <div class="title"><?=$slide->title?></div>
+            <p><?=$slide->content?></p><a href="<?=$slide->link?>" target="_blank" class="button">УЗНАТЬ ПОДРОБНЕЕ</a>
+        </div>
     </div>
-    <div class="item"><img src="/template/images/bg/main_slide.jpg">
-        <div class="desc">
-            <div class="title">Заголовок слайдера</div>
-            <p>Lorem Ipsum - это текст-"рыба", часто используемый в печати и вэб-дизайне. Lorem Ipsum является стандартной "рыбой" для текстов на латинице с начала XVI века.</p><a href="#" class="button">УЗНАТЬ ПОДРОБНЕЕ</a></div>
-    </div>
-    <div class="item"><img src="/template/images/bg/main_slide.jpg">
-        <div class="desc">
-            <div class="title">Заголовок слайдера</div>
-            <p>Lorem Ipsum - это текст-"рыба", часто используемый в печати и вэб-дизайне. Lorem Ipsum является стандартной "рыбой" для текстов на латинице с начала XVI века.</p><a href="#" class="button">УЗНАТЬ ПОДРОБНЕЕ</a></div>
-    </div>
+    <?php endforeach; ?>
 </div>
 <div class="kinds wrapper">
     <h2 class="title_top">ВИДЫ ПОДПИСОК</h2>
     <div class="slider-kinds">
+        <?php foreach($products as $product): ?>
         <div class="item">
-            <a href="#" class="img_wrap"><img src="/template/images/bg/product.jpg">
-                <div class="title">Женские носочки <span>(короткие) р.36-38</span></div>
+            <a href="#" class="img_wrap"><img src="<?=$product->getImage()->getUrl('208x171')?>">
+                <div class="title"><?=$product->title?> <span><?=$product->getSizes()?></span></div>
             </a>
-            <div class="color">Цвет: <span>голубой</span></div>
+            <div class="color">Цвет: <span><?=$product->getColors();?></span></div>
             <div class="bottom">
                 <div class="coast">
-                    <div class="current"><span>201</span><span>.00</span> руб.</div>
-                </div><a href="" class="button">ОФОРМИТЬ</a></div>
+                    <div class="current"><span><?=$price->price?></span> руб/мес.</div>
+                </div><a href="<?=Url::to(['/catalog'])?>" class="button">ОФОРМИТЬ</a></div>
         </div>
-        <div class="item">
-            <a href="#" class="img_wrap"><img src="/template/images/bg/product.jpg">
-                <div class="title">Женские носочки <span>(короткие) р.36-38</span></div>
-            </a>
-            <div class="color">Цвет: <span>голубой</span></div>
-            <div class="bottom">
-                <div class="coast">
-                    <div class="current"><span>201</span><span>.00</span> руб.</div>
-                </div><a href="" class="button">ОФОРМИТЬ</a></div>
-        </div>
-        <div class="item">
-            <a href="#" class="img_wrap"><img src="/template/images/bg/product.jpg">
-                <div class="title">Женские носочки <span>(короткие) р.36-38</span></div>
-            </a>
-            <div class="color">Цвет: <span>голубой</span></div>
-            <div class="bottom">
-                <div class="coast">
-                    <div class="current"><span>201</span><span>.00</span> руб.</div>
-                </div><a href="" class="button">ОФОРМИТЬ</a></div>
-        </div>
-        <div class="item">
-            <a href="#" class="img_wrap"><img src="/template/images/bg/product.jpg">
-                <div class="title">Женские носочки <span>(короткие) р.36-38</span></div>
-            </a>
-            <div class="color">Цвет: <span>голубой</span></div>
-            <div class="bottom">
-                <div class="coast">
-                    <div class="old">31.00 руб.</div>
-                    <div class="current"><span>201</span><span>.00</span> руб.</div>
-                </div><a href="" class="button">ОФОРМИТЬ</a></div>
-        </div>
+        <?php endforeach; ?>
     </div>
 </div>
 <div class="service">
