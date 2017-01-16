@@ -63,3 +63,11 @@ img {
     font-size: 14px;
     padding: 7px 20px 4px;
 }
+.selected .wrap {
+    margin-right: 75px;
+}
+
+.catalog_slider .top .color_select span {
+    display: inline-block;
+    margin-top: -5px;
+}

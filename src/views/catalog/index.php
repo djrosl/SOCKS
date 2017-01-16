@@ -12,7 +12,12 @@ $this->title = 'Каталог';
 NgAsset::register($this);
 
 ?>
-<div class="wrp"  ng-app="Socks" ng-controller="CatalogController">
+<style>
+    [ng-cloak] {
+        display: none !important;
+    }
+</style>
+<div class="wrp"  ng-app="Socks" ng-controller="CatalogController" ng-cloak>
 <div class="catalog wrapper">
     <h2 class="title_top">Каталог товаров</h2>
     <div class="tabs"><a href="#" class="tab_socks active" data-tab-handler="socks">НОСКИ</a> <a href="#" class="tab_personal_data" data-tab-handler="underwear">Нижнее белье</a></div>
