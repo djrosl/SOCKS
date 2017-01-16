@@ -224,7 +224,9 @@ $this->title = 'Личный кабинет';
                         'class'=>'contact_form_order'
                     ]
                 ]);
-                $order->phone = Yii::$app->user->identity->profile->phone; ?>
+                $order->phone = Yii::$app->user->identity->profile->phone;
+                $order->address = Yii::$app->user->identity->profile->location;
+                ?>
 
                     <span><?=$order->address ? "ФОРМА ОТПРАВЛЕНА" : 'ОФОРМИТЕ ПОДПИСКУ'?></span>
                 <?php if(!$order->address): ?>
@@ -255,6 +257,7 @@ $this->title = 'Личный кабинет';
                 <?php
                 $settings->name = Yii::$app->user->identity->profile->name;
                 $settings->phone = Yii::$app->user->identity->profile->phone;
+                $settings->location = Yii::$app->user->identity->profile->location;
                 ?>
                 <?= $form->field($settings, 'name')->textInput(['placeholder'=>'ФИО'])->label(false) ?>
             </div>
@@ -264,6 +267,9 @@ $this->title = 'Личный кабинет';
             <div class="row">
                 <?= $form->field($settings, 'email')->textInput(['placeholder'=>'E-mail'])->label(false) ?>
                 <?= $form->field($settings, 'username')->hiddenInput()->label(false) ?>
+            </div>
+            <div class="row">
+                <?= $form->field($settings, 'location')->textInput(['placeholder'=>'Адрес'])->label(false) ?>
             </div>
             <div class="row">
                 <?= $form->field($settings, 'new_password')->passwordInput(['placeholder'=>'Новый пароль'])->label(false) ?>

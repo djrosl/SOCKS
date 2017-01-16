@@ -30,6 +30,7 @@ class SettingsController extends \dektrium\user\controllers\SettingsController
             $profile = \Yii::$app->user->identity->getProfile()->one();
             $profile->name = \Yii::$app->request->post('settings-form')['name'];
             $profile->phone = \Yii::$app->request->post('settings-form')['phone'];
+            $profile->location = \Yii::$app->request->post('settings-form')['location'];
             $profile->save();
 
             return $this->redirect(['/account']);

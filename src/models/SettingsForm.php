@@ -18,6 +18,7 @@ class SettingsForm extends \dektrium\user\models\SettingsForm
      */
     public $name;
     public $phone;
+    public $location;
 
     /**
      * @inheritdoc
@@ -29,6 +30,8 @@ class SettingsForm extends \dektrium\user\models\SettingsForm
         $rules[] = ['name', 'string', 'max' => 255];
         $rules[] = ['phone', 'required'];
         $rules[] = ['phone', 'string', 'max' => 255];
+        $rules[] = ['location', 'required'];
+        $rules[] = ['location', 'string', 'max' => 255];
         return $rules;
     }
 
@@ -40,6 +43,7 @@ class SettingsForm extends \dektrium\user\models\SettingsForm
         $labels = parent::attributeLabels();
         $labels['name'] = \Yii::t('user', 'ФИО');
         $labels['phone'] = \Yii::t('user', 'Телефон');
+        $labels['location'] = \Yii::t('user', 'Адрес');
         return $labels;
     }
 
@@ -55,6 +59,7 @@ class SettingsForm extends \dektrium\user\models\SettingsForm
         $profile = $user->getProfile()->one();
         $profile->name = $this->name;
         $profile->phone = $this->phone;
+        $profile->location = $this->location;
         $profile->save();
 
     }

@@ -51,7 +51,6 @@ AppAsset::register($this);
             <div class="burger"><span></span> <span></span> <span></span></div>
             <ul>
                 <li><a href="<?=Url::to(['/catalog'])?>">Подписаться</a></li>
-                <li><a href="<?=Url::to(['/catalog'])?>">Каталог товаров</a></li>
                 <li><a href="<?=Url::to(['site/about'])?>">Как это работает</a></li>
                 <li><a href="<?=Url::to(['site/delivery'])?>">Доставка и оплата</a></li>
                 <li><a href="<?=Url::to(['site/faq'])?>">Вопрос/Ответ</a></li>
