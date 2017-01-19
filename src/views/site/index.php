@@ -25,7 +25,7 @@ $this->title = Yii::$app->name;
             <div class="color">Цвет: <span><?=$product->getColors();?></span></div>
             <div class="bottom">
                 <div class="coast">
-                    <div class="current"><span><?=$price->price?></span> руб/мес.</div>
+                    <div class="current"><span><?=$price->price?></span> руб.</div>
                 </div><a href="<?=Url::to(['/catalog'])?>" class="button">ОФОРМИТЬ</a></div>
         </div>
         <?php endforeach; ?>

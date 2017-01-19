@@ -64,10 +64,29 @@ img {
     padding: 7px 20px 4px;
 }
 .selected .wrap {
-    margin-right: 75px;
+    margin-left: 75px;
 }
 
 .catalog_slider .top .color_select span {
     display: inline-block;
     margin-top: -5px;
+}
+
+.kinds .button {
+    margin-left: 10px;
+}
+.kinds .color {
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+.made_in img {
+    margin-right: 32px;
+}
+.catalog_slider .top label span {
+    padding-top: 7px;
+}
+
+.male, .female, .color, .type, .size {
+    transition: transform .4s;
+    display: inline-block;
 }

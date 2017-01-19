@@ -25,8 +25,52 @@ app.controller('CatalogController', ['$scope', '$http', function($scope, $http){
                 'id':id
             };
             $scope.index+=1;
+        } else {
+            var error = [];
+            if(!gender){
+                error.push('пол');
+                hasError('.male, .female')
+            }
+            if(!color){
+                error.push('цвет');
+                hasError('.color_select')
+            }
+            if(!type){
+                error.push('тип');
+                hasError('.center .type')
+            }
+            if(!size){
+                hasError('.center .size')
+            }
+
+            alert('Сначала выберите '+error.join(', ')+'!');
         }
     };
+
+    function hasError(selector){
+        var el = $('.catalog_slider').find('.owl-item.active');
+        el.find(selector).css({
+            transform: 'scale(1.07)'
+        });
+
+        setTimeout(function(){
+            el.find(selector).css({
+                transform: 'scale(1.07)'
+            });
+        }, 500);
+
+        setTimeout(function(){
+            el.find(selector).css({
+                transform: 'scale(1.07)'
+            });
+        }, 1000);
+
+        setTimeout(function(){
+            el.find(selector).css({
+                transform: 'scale(1.07)'
+            });
+        }, 1500);
+    }
 
     $scope.removeChoice = function(index){
         $scope.choice[index] = {};
