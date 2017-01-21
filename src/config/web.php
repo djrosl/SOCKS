@@ -13,6 +13,13 @@ $config = [
     'runtimePath' => dirname(dirname(__DIR__)) . '/runtime',
     'bootstrap' => ['log'],
     'components' => [
+        'view' => [
+            'theme' => [
+                'pathMap' => [
+                    '@dektrium/user/views' => '@app/views/user'
+                ],
+            ],
+        ],
         'formatter' => [
             'class' => 'app\components\Formatter',
         ],

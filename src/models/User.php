@@ -12,6 +12,8 @@ namespace app\models;
 class User extends \dektrium\user\models\User
 {
 
+    public $last_login_at;
+
     public function getSubscriptions() {
         return $this->hasMany(UserSubcription::className(), [
             'user_id'=>'id'

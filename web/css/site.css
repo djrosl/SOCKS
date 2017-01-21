@@ -90,3 +90,44 @@ img {
     transition: transform .4s;
     display: inline-block;
 }
+
+.panel.panel-default {
+    margin: 20px auto 60px;
+}
+.form-control {
+
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #d1d1d1;
+    margin-bottom: 7px;
+    -webkit-transition: border-color 0.3s ease-out;
+    transition: border-color 0.3s ease-out;
+
+}
+.btn {
+    display: inline-block;
+    background-color: #007eff;
+    border-radius: 3px;
+    box-shadow: 0 2px 0 #004fa0;
+    color: #fff;
+    margin-bottom: 2px;
+    -webkit-transition: background-color 0.3s ease;
+    transition: background-color 0.3s ease;
+    padding: 5px 10px;
+}
+footer {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    left: 0;
+}
+body {
+    position: relative;
+    padding-bottom: 200px;
+    min-height:100vh;
+}
+.row {
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+}
