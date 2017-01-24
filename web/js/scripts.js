@@ -10,7 +10,7 @@ $(document).ready(function(){
       $(this).parents('.popup').fadeOut(100);
   });
   $('#register-form-email').change(function(){
-      $('#register-form-username').val($(this).val().split('@')[0])
+      //$('#register-form-username').val($(this).val().split('@')[0])
   });
     $('#registration-form').submit(function(e){
         e.preventDefault();

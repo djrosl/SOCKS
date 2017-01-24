@@ -160,6 +160,12 @@ AppAsset::register($this);
                 'action' => ['/user/registration/register']
             ]); ?>
 
+            <?= $form->field($register, 'username',
+                ['inputOptions' => [
+                    'placeholder'=>Yii::t('user', 'Username')
+                ]
+                ])->label(false) ?>
+
             <?= $form->field($register, 'name',
                 ['inputOptions' => [
                     'placeholder'=>Yii::t('user', 'ФИО')
@@ -177,8 +183,6 @@ AppAsset::register($this);
                     'placeholder'=>Yii::t('user', 'Email')
                 ]
             ])->label(false) ?>
-
-            <?= $form->field($register, 'username')->hiddenInput()->label(false) ?>
 
             <?= $form->field($register, 'password',
                 ['inputOptions' => [
