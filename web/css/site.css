@@ -131,3 +131,13 @@ body {
     max-width: 1200px;
     margin: 0 auto;
 }
+
+.kinds .title {
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    width: 90%;
+    padding-right: 5px;
+    text-align: left;
+    padding-left: 25px;
+    overflow: hidden;
+}
