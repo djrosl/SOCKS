@@ -27,16 +27,13 @@ $(document).ready(function(){
 
     });
 
-    /*$('#login-form').submit(function(e){
-        e.preventDefault();
-
-        var data = $(this).serialize();
-
-        $.post($(this).attr('action'), data, function (response) {
-            if(response){
-                window.location.href = window.location.href;
+    $('body').on('click', '.catalog_slider .owl-next, .catalog_slider .owl-prev', function(e){
+            console.log($('.catalog_slider .owl-item.active').next().length);
+            if($('.catalog_slider .owl-item:last-child').hasClass('active')){
+                $('.catalog_slider').trigger('to.owl.carousel', 0)
             }
-        });
-
-    });*/
+        /*if($('.catalog_slider .owl-item.active').index() - 1 == 0){
+            $('.catalog_slider').trigger('to.owl.carousel', $('.catalog_slider .owl-item').length)
+        }*/
+    });
 });

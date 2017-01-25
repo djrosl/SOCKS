@@ -141,3 +141,27 @@ body {
     padding-left: 25px;
     overflow: hidden;
 }
+
+.owl-carousel .owl-controls {
+    text-align: center;
+}
+.owl-carousel .owl-controls .owl-dot {
+    border: 1px solid #007eff;
+    display: inline-block;
+    width: 12px;
+    height: 12px;
+    margin: 30px 3px 0;
+    border-radius: 2px;
+
+}
+.owl-carousel .owl-controls .owl-dot.active {
+    background: #007eff;
+}
+
+.catalog_slider .top label input[type='radio']:checked + span {
+    box-shadow: inset 0 0 1px 1px;
+}
+
+.catalog_slider .top label span:after {
+    display: none;
+}

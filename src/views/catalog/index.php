@@ -95,24 +95,6 @@ NgAsset::register($this);
     <div class="wrapper">
         <div class="title_top">Ваш выбор</div>
         <div class="wrap">
-            <!--<div class="item active confirm">
-                <a href="" class="delete"></a>
-                <div class="top">
-                    <div class="gender">Женские носочки</div>
-                    <div class="type">(теп.классические) р.36</div>
-                </div>
-                <div class="img_wrap"><img src="/template/images/bg/product.jpg" class="bg"> <span class="ok"></span></div>
-                <div class="color">Цвет: <span>Голубой</span></div>
-            </div>
-            <div class="item active isactive">
-                <a href="" class="delete"></a>
-                <div class="top">
-                    <div class="gender">Женские носочки</div>
-                    <div class="type">(теп.классические) р.36</div>
-                </div>
-                <div class="img_wrap"><img src="/template/images/bg/product.jpg" class="bg"> <span class="ok"></span></div>
-                <div class="color">Цвет: <span>Голубой</span></div>
-            </div>-->
             <div class="item"
                  ng-class="{active: item.img, confirm: item.img}"
                  ng-repeat="item in choice">
