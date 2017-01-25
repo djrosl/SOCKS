@@ -44,6 +44,10 @@ class Module extends \nullref\admin\Module implements IAdminModule
                     'url' => ['/admin/notification'],
                 ],
                 [
+                    'label' => 'Пользователи',
+                    'url' => ['/admin/subscriber'],
+                ],
+                [
                     'label' => 'Администраторы',
                     'url' => ['/admin/user'],
                 ],
