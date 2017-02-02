@@ -8,6 +8,7 @@ use app\models\ExchangeDirection;
 use app\models\Order;
 use app\models\Referal;
 use app\models\ReferalOrder;
+use app\modules\admin\models\FieldSearch;
 use nullref\admin\components\AdminController;
 use nullref\admin\models\Admin;
 use nullref\admin\models\LoginForm;
@@ -56,11 +57,16 @@ class MainController extends AdminController
 		return parent::afterAction($action, $result);
 	}
 
-	public function actionIndex($status = 3)
+	public function actionIndex()
     {
 
+        $searchModel = new FieldSearch();
+        $dataProvider = $searchModel->search(Yii::$app->request->queryParams);
 
-        return $this->render('index');
+        return $this->render('index', [
+            'searchModel' => $searchModel,
+            'dataProvider' => $dataProvider,
+        ]);
     }
 
 

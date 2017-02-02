@@ -5,6 +5,9 @@
 namespace app\components;
 
 
+use app\models\Field;
+use yii\helpers\Html;
+
 class Formatter extends \yii\i18n\Formatter
 {
 
@@ -72,6 +75,10 @@ class Formatter extends \yii\i18n\Formatter
 
 
         return $interval;
+    }
+
+    static function field($slug = '') {
+        return Html::decode(Field::findOne(['slug'=>$slug])->content);
     }
 
 }

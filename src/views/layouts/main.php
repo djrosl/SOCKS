@@ -1,6 +1,7 @@
 <?php
 use app\assets\AppAsset;
 use app\assets\TemplateAsset;
+use app\components\Formatter;
 use dektrium\user\models\LoginForm;
 use app\models\RegistrationForm;
 use yii\bootstrap\Nav;
@@ -37,8 +38,8 @@ AppAsset::register($this);
             <a href="/" class="logo"><img src="/template/images/icons/logo.png">
                 <h1>Носки по подписке Владивосток</h1></a>
             <div class="contacts">
-                <a href="tel:89024845226" class="phone"><img src="/template/images/icons/phone.png" alt="phone-icon"> <span>8 (902) 484 52 26</span> </a>
-                <a href="mailto:grusomme.h@mail.ru" class="mail"><img src="/template/images/icons/mail.png" alt="mail-icon"> <span>grusomme.h@mail.ru</span></a>
+                <a href="tel:89024845226" class="phone"><img src="/template/images/icons/phone.png" alt="phone-icon"> <span><?=Formatter::field('phone')?></span> </a>
+                <a href="mailto:grusomme.h@mail.ru" class="mail"><img src="/template/images/icons/mail.png" alt="mail-icon"> <span><?=Formatter::field('email')?></span></a>
             </div>
 
             <?php if(Yii::$app->user->isGuest): ?>
@@ -73,7 +74,7 @@ AppAsset::register($this);
             <div class="social">
                 <a href="#"><img src="/template/images/icons/social.jpg"></a>
             </div>
-            <div class="contacts"><a href="tel:89024845226" class="phone">8 (902) 484 52 26</a> <a href="mailto:grusomme.h@mail.ru" class="mail">grusomme.h@mail.ru</a></div>
+            <div class="contacts"><a href="tel:89024845226" class="phone"><?=Formatter::field('phone')?></a> <a href="mailto:grusomme.h@mail.ru" class="mail"><?=Formatter::field('email')?></a></div>
             <div class="copyright">© 2016 Соксус</div>
         </div>
     </footer>
