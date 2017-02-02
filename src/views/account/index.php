@@ -46,7 +46,7 @@ $this->title = 'Личный кабинет';
                         <?php if(Formatter::diff(date('Y-m'), $order->date_start)->m && Formatter::diff(date('Y-m'), $order->date_start)->invert): ?><div><span><?=Formatter::diff(date('Y-m'), $order->date_start)->m?> месяц (истекает через <?=Formatter::diff($order->date_end, date('Y-m'))->m?> месяцев)</span></div><?php endif; ?>
                     </li>
                     <li class="money_status">
-                        <span><?=$order->subscription->price?> Р. </span><span>(не оплачено)</span>
+                        <span><?=$order->subscription->price?> Р. </span><span>(<?=$order->status ? 'оплачено':'не оплачено'?>)</span>
                     </li>
                     <li class="order_status">
                         <a href="#" class="details">Подробнее</a>

@@ -67,6 +67,7 @@ NgAsset::register($this);
                         </div>
                         <div class="center">
                             <div class="type">
+                                <div class="span title">Тип:</div>
                                 <label>
                                     <input type="radio" name="type" ng-model="type" value="Теп."> <span>Теплые</span></label>
                                 <label>

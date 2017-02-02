@@ -1886,7 +1886,8 @@ footer .copyright {
   margin-bottom: 15px;
 }
 
-.size .title {
+.size .title,
+.type .title{
   display: inline-block;
   font-family: 'PF Square Sans Pro Medium';
   color: #2e557d;
