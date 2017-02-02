@@ -29,7 +29,7 @@ class UserSubcription extends \yii\db\ActiveRecord
         return [
             [['subscription_id', 'user_id', 'status'], 'integer'],
             [['date'], 'safe'],
-            [['date_start','date_end'], 'date', 'safe'/*'format'=>'Y-m-d'*/],
+            [['date_start','date_end'], /*'date',*/ 'safe'/*'format'=>'Y-m-d'*/],
             [['address', 'phone'], 'safe'],
         ];
     }
